@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@font-face {
+    font-family: "BebasNeue";
+    display: swap;
+    src: url("../fonts/BebasNeue-Regular.ttf");
+}
+@keyframes emoji {
+    0% {
+      transform: translateX(-720px) rotate(0);
+    }
+    60% {
+      transform: translateX(200px) rotate(490deg);
+    }
+    100% {
+      transform: translateX(0) rotate(360deg);
+    }
+  }
+  @keyframes tittle {
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @theme {
+    --font-BebasNeue: "BebasNeue";
+    --color-pink-light:#FBC1D4;
+    --animate-tittle-1 :tittle 1.5s forwards;
+    --animate-tittle-2 :emoji 2s forwards;
+    
+  }
+  .animation-tittle{
+    transform: translateY(300px);
+    transition: all 1s ease-in-out;
+  }
+  CSS
+
+/* hide scrollbar but allow scrolling */
+body {
+
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+
+  overflow-y: scroll;
+
+}
+
+body::-webkit-scrollbar {
+
+  display: none; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
