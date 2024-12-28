@@ -544,6 +544,12 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .z-9 {
+    z-index: 9;
+  }
+  .m-1 {
+    margin: calc(var(--spacing) * 1);
+  }
   .block {
     display: block;
   }
@@ -564,6 +570,9 @@
   }
   .table {
     display: table;
+  }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
   }
   .h-1 {
     height: calc(var(--spacing) * 1);
