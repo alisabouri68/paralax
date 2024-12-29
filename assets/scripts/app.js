@@ -14,7 +14,7 @@ animateTittle.forEach(items=>{
     }, 3000);
     document.addEventListener('mousemove' , e=>{
         const mouse = document.querySelector('.mouse')
-        mouse.style.cssText = "top:"+e.clientY+"px; left: "+e.clientX+"px;"
+        mouse.style.cssText = "top:"+e.clientY+"px; left: "+e.clientX+"px; box-shadow:0 0 300px 200px rgba(255, 255, 255, 0.250);"
     })
 
 })
