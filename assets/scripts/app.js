@@ -18,11 +18,12 @@ document.addEventListener("mousemove", (e) => {
     e.clientY +
     "px; left: " +
     e.clientX +
-    "px; box-shadow:0 0 300px 200px rgba(255, 255, 255, 0.250);";
+    "px; box-shadow:0 0 500px 100px rgba(255, 255, 255, 0.250);";
 });
 
 const ShadowHero = document.querySelector(".hero");
 const shadowOne = document.querySelector(".shadow-layer-one");
+const textShadow = document.querySelector(".shadow-layer-four");
 ShadowHero.addEventListener("mousemove", (e) => {
   // function client for shadow hero
   let clientxy = (client, elwidth) => {
@@ -48,5 +49,6 @@ ShadowHero.addEventListener("mousemove", (e) => {
     cy = Math.abs(clientxy(e.clientY, ShadowHero.clientHeight) - 20)
   }
   shadowOne.style.boxShadow = `inset ${cx}px ${cy}px 10px 3px #E591AA`;
+  textShadow.style.textShadow = `${cx}px ${cy}px 4px #E591AA , 0px 0px 16px rgba(255, 255, 255, 0.598) `
   console.log(cy);
 });
